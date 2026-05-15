@@ -70,6 +70,8 @@ a {
    NAVBAR
    ============================ */
 .navbar {
+  margin: auto;
+  max-width: 1200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -83,7 +85,7 @@ a {
   /* background: rgba(17, 17, 17, 0.75);
   backdrop-filter: blur(14px); */
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
   transition: background 0.3s var(--ease);
 }
 
