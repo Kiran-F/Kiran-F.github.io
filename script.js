@@ -12,9 +12,9 @@
    5. Replace the three placeholder strings below with your real values
    ======================================================= */
 
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // ← replace
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // ← replace
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // ← replace
+const EMAILJS_PUBLIC_KEY = "P8j-PnBUmzuYVXrn7";   // ← fixed with quotes
+const EMAILJS_SERVICE_ID = "service_adfil8k";   // ← fixed with quotes
+const EMAILJS_TEMPLATE_ID = "template_1we0vbt";  // ← fixed with quotes
 
 // Initialise EmailJS
 emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
@@ -47,23 +47,23 @@ animateEls.forEach((el) => observer.observe(el));
 /* ============================
    CONTACT FORM
    ============================ */
-const form       = document.getElementById("contact-form");
-const submitBtn  = document.getElementById("submit-btn");
-const btnText    = submitBtn.querySelector(".btn-text");
+const form = document.getElementById("contact-form");
+const submitBtn = document.getElementById("submit-btn");
+const btnText = submitBtn.querySelector(".btn-text");
 const btnLoading = submitBtn.querySelector(".btn-loading");
 const formStatus = document.getElementById("form-status");
 
-const nameInput    = document.getElementById("user-name");
-const emailInput   = document.getElementById("user-email");
+const nameInput = document.getElementById("user-name");
+const emailInput = document.getElementById("user-email");
 const messageInput = document.getElementById("user-message");
 
-const nameError    = document.getElementById("name-error");
-const emailError   = document.getElementById("email-error");
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
 const messageError = document.getElementById("message-error");
 
 // Real-time inline validation
-nameInput.addEventListener("input",    () => validateField(nameInput,    nameError,    "Please enter your name."));
-emailInput.addEventListener("input",   () => validateEmail());
+nameInput.addEventListener("input", () => validateField(nameInput, nameError, "Please enter your name."));
+emailInput.addEventListener("input", () => validateEmail());
 messageInput.addEventListener("input", () => validateField(messageInput, messageError, "Please enter your message."));
 
 function validateField(input, errorEl, msg) {
@@ -106,8 +106,8 @@ form.addEventListener("submit", async (e) => {
 
   // Loading state
   submitBtn.disabled = true;
-  btnText.hidden     = true;
-  btnLoading.hidden  = false;
+  btnText.hidden = true;
+  btnLoading.hidden = false;
 
   try {
     await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form);
@@ -121,7 +121,7 @@ form.addEventListener("submit", async (e) => {
     formStatus.classList.add("error");
   } finally {
     submitBtn.disabled = false;
-    btnText.hidden     = false;
-    btnLoading.hidden  = true;
+    btnText.hidden = false;
+    btnLoading.hidden = true;
   }
 });
