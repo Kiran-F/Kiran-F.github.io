@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Fatima — Frontend Developer</title>
+  <meta name="description"
+    content="Kiran Fatima is a frontend developer specializing in HTML, CSS, JavaScript, Tailwind CSS, and React — building beautiful, accessible web experiences." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">kiran fatima</a>
+    <div class="nav-social">
+      <a href="#" class="social-icon" id="github-nav" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="social-icon" id="linkedin-nav" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+
+    <!-- Concentric rings — positioned behind the text on the left -->
+    <div class="hero-rings">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+
+    <!-- Single padded container holding both text and image -->
+    <div class="hero-inner">
+
+      <div class="hero-content" data-animate>
+        <h1 class="hero-title">
+          Nice to meet you!<br />
+          I'm <span class="name-highlight">Kiran Fatima.</span>
+        </h1>
+        <p class="hero-bio">
+          Based in Pakistan, I'm a front-end developer passionate about
+          crafting accessible, pixel-perfect web experiences that users love.
+        </p>
+        <a href="#contact" class="btn-primary">CONTACT ME</a>
+      </div>
+
+      <div class="hero-photo">
+        <img src="greybg.jpg" alt="Kiran Fatima — Frontend Developer" />
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section" id="skills">
+    <div class="skills-grid" data-animate>
+      <div class="skill-item">
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-item">
+        <h3>CSS</h3>
+      </div>
+      <div class="skill-item">
+        <h3>Javascript</h3>
+      </div>
+      <div class="skill-item">
+        <h3>Tailwind</h3>
+      </div>
+      <div class="skill-item">
+        <h3>React</h3>
+      </div>
+      <div class="skill-item">
+        <h3>Git/Github</h3>
+      </div>
+    </div>
+    <div class="skills-rings">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects-section" id="projects">
+    <div class="projects-header" data-animate>
+      <h2>Projects</h2>
+      <a href="#contact" class="contact-link-sm">CONTACT ME</a>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-animate>
+        <div class="project-thumbnail diary-bg">
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn btn-view" id="dear-diary-live">VIEW PROJECT</a>
+            <a href="#" class="overlay-btn btn-code" id="dear-diary-code">VIEW CODE</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h4 class="project-name">DEAR DIARY</h4>
+          <span class="project-tags">React &middot; Firebase</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-animate>
+        <div class="project-thumbnail blogy-bg">
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn btn-view" id="blogy-live">VIEW PROJECT</a>
+            <a href="#" class="overlay-btn btn-code" id="blogy-code">VIEW CODE</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h4 class="project-name">BLOGY</h4>
+          <span class="project-tags">React &middot; Appwrite</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-animate>
+        <div class="project-thumbnail cafe-bg">
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn btn-view" id="barista-live">VIEW PROJECT</a>
+            <a href="#" class="overlay-btn btn-code" id="barista-code">VIEW CODE</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h4 class="project-name">BARISTA CAFE</h4>
+          <span class="project-tags">HTML &middot; CSS &middot; JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-animate>
+        <div class="project-thumbnail recipe-bg">
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn btn-view" id="recime-live">VIEW PROJECT</a>
+            <a href="#" class="overlay-btn btn-code" id="recime-code">VIEW CODE</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h4 class="project-name">RECIME</h4>
+          <span class="project-tags">HTML &middot; CSS &middot; JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-left" data-animate>
+      <h2>Contact</h2>
+      <p>
+        I would love to hear about your project and how I could help.
+        Please fill in the form, and I'll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <div class="contact-right" data-animate>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="user-name" name="user_name" placeholder="FIRSTNAME SURNAME" autocomplete="name"
+            required />
+          <span class="field-error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="user-email" name="user_email" placeholder="FIRSTNAME@EXAMPLE.COM" autocomplete="email"
+            required />
+          <span class="field-error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="user-message" name="message" placeholder="MESSAGE" rows="6" required></textarea>
+          <span class="field-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn-send" id="submit-btn">
+          <span class="btn-text">SEND MESSAGE →</span>
+          <span class="btn-loading" hidden>SENDING...</span>
+        </button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <a href="#home" class="footer-logo">kiran fatima</a>
+    <div class="footer-social">
+      <a href="#" class="social-icon" id="github-footer" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="social-icon" id="linkedin-footer" aria-label="LinkedIn" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
